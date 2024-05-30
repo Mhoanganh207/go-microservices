@@ -7,7 +7,7 @@ async function testBroker(){
    let sent = document.getElementById("payload")
    let received = document.getElementById("received")
 
-   const data = await axios.post("http://localhost:8080/broker").then(res => {
+   const data = await axios.post("http://localhost:8000/broker").then(res => {
       return res.data;
    })
    .catch(err => {
