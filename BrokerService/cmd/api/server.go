@@ -25,6 +25,6 @@ func (s *Server) Run() error {
 		AllowCredentials: true,
 	})
 	s.router.Use(c)
-	s.addBroker(s.router)
+	s.addBroker()
 	return s.router.Run(":8000")
 }
